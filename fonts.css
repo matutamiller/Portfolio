@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "Exo";
+	src: url(assets/fonts/Exo-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Exo";
+	src: url(assets/fonts/Exo-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Exo";
+	src: url(assets/fonts/Exo-Thin.ttf);
+	font-weight: 100;
+}

@@ -362,11 +362,7 @@ a {
 	box-sizing: border-box;
 	background-color: grey;
 	height: 40vh;
-	border: 1px solid transparent;
-	filter: sepia(80%);
-	outline: 3px solid #ffffff;
-	outline-offset: 0px;
-	transition: filter, outline-offset 1s ease, outline; 
+	border: none;
 }
 .col1 {
 	width: calc(33.33% - 30px);
@@ -414,38 +410,44 @@ a {
 	justify-content: space-around;
 	text-align: center;
 	color: #ffffff;
+	background-color: #455a64;
+	overflow: hidden;
+  	height: 0;
+  	transition: 1s ease;
+  
 }
 
-.wbtext {
-	opacity: 0;
-	transition: opacity 0.5s;
-} 	
-.forHover:hover .wbtext {
-	opacity:1;
-	padding-bottom: 10%;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 1s, opacity 1s;
-	-webkit-transform: translate3d(0,-20px,0);
-	transform: translate3d(0,-20px,0);
+.wblocks:hover .forHover {
+  height: 100%;
+}
+.work-button {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.work-button a{
+	width: 40%;
+	border: 1px solid #78909c;
+	border-radius: 5px;
+	background-color: #78909c;
 	color: #ffffff;
-
-} 
-
-.forHover:hover .wbtitle {
-	padding-top: 10%;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 1s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-	color: #ffffff;
+	height: 38px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-size: 12px;
+	transition: background-color .5s ease;
+	text-align: center;
+	padding: 10px 0px;
 }
 
-.wblocks:hover {
-	outline: 3px solid #ffffff;
-	outline-offset: -40px;
-	filter: sepia(10%);	
-	transition: filter, outline-offset 1s ease, outline; 
+.wlink:hover {
+	background-color: #4bcaff;
+	border: 1px solid #4bcaff;
+	transition: all 1s ease;
 }
+
 
 /* ---------------------------------------------- /*
  * My Skills

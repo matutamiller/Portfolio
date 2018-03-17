@@ -362,7 +362,8 @@ a {
 	box-sizing: border-box;
 	background-color: grey;
 	height: 40vh;
-	border: none;
+	border: 1px solid #263238;
+	border-radius: 15px;
 }
 .col1 {
 	width: calc(33.33% - 30px);
@@ -410,10 +411,11 @@ a {
 	justify-content: space-around;
 	text-align: center;
 	color: #ffffff;
-	background-color: #455a64;
+	background-color: #1976d2;
 	overflow: hidden;
   	height: 0;
   	transition: 1s ease;
+	border-radius: 15px;
   
 }
 
@@ -429,14 +431,15 @@ a {
 
 .work-button a{
 	width: 40%;
-	border: 1px solid #78909c;
+	border: 1px solid #ffffff;
 	border-radius: 5px;
-	background-color: #78909c;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #263238;
 	height: 38px;
 	box-sizing: border-box;
 	text-transform: uppercase;
 	font-size: 12px;
+	font-weight: 600;
 	transition: background-color .5s ease;
 	text-align: center;
 	padding: 10px 0px;

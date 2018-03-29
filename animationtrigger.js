@@ -83,7 +83,7 @@ var pos = animatedBlock.offsetTop + 1450;
 }
 
 /*
-My Skillss Text Animation
+My Skills Text Animation
 */
 
 window.addEventListener("scroll", skillsAnimationTrigger);
@@ -92,14 +92,43 @@ function skillsAnimationTrigger() {
 
 var animatedBlock = document.getElementById("myskills-animate"); 
 
-var pos = animatedBlock.offsetTop + 1800;               
+var pos = animatedBlock.offsetTop + 1000;               
   if (window.pageYOffset >= pos) { 
-    animatedBlock.classList.add("fadeInUp") 
+    animatedBlock.classList.add("fadeInUp", "mypros-visible") 
     } 
 }
 
+/*
+MY Pros Text Animation
+*/
 
+window.addEventListener("scroll", prosAnimationTrigger);
 
+function prosAnimationTrigger() {
+
+var prosAnimatedBlock = document.getElementById("mypros-animate"); 
+
+var pos = prosAnimatedBlock.offsetTop + 2800;               
+  if (window.pageYOffset >= pos) { 
+    prosAnimatedBlock.classList.add("fadeInUp", "mypros-visible"); 
+    } 
+}
+
+/*
+Contact Me Text Animation
+*/
+
+window.addEventListener("scroll", contactAnimationTrigger);
+
+function contactAnimationTrigger() {
+
+var contactAnimatedBlock = document.getElementById("contact-animate"); 
+
+var pos = contactAnimatedBlock.offsetTop + 3400;               
+  if (window.pageYOffset >= pos) { 
+    contactAnimatedBlock.classList.add("fadeInUp", "contact-visible"); 
+    } 
+}
 
 /*
 Contact Form Animation

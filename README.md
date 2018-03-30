@@ -7,3 +7,5 @@ v1.0 - I have created a responsive layout (design is inspired by PSD layout) usi
 v1.1 - I have worked with the content of 'what I use' block. I added svg icons and my development tools description.
 
 v1.2 - I have worked with 'my works' blocks. I have changed hover effect to image hover slide effect, added links and titles.
+
+v1.3 - I have created responsive navigation menu.

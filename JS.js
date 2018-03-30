@@ -20,6 +20,25 @@ window.onload = function(){                        //calling the function on win
 };
 
 
+
+/* ---------------------------------------------- /*
+* Menu
+/* ---------------------------------------------- */
+
+(function () {
+    document.getElementById('menu_button').onclick = function () {
+        if (this.className != 'active'){
+            this.className = 'active';
+            document.getElementsByTagName('nav')[0].className = 'active';
+        } else {
+            this.className = '';
+            document.getElementsByTagName('nav')[0].className = '';
+        }
+    }
+})();
+
+
+
 /* ---------------------------------------------- /*
 * Rotator  
 /* ---------------------------------------------- */

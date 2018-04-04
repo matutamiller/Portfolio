@@ -242,44 +242,49 @@ a {
     transform: translateY(-0.5625em) rotate(45deg);
 }
 
-
-nav.active {
-    display: block;
-    margin-top: 50px;    
-}
-
-
-
 @media(max-width:850px){
   #menu {display:block}
   .buttons {display: none}
 }
 
-nav{
-  display: none;
-  height:100%;
-  width:100%;
+
+
+
+#burger{
+  display: block;
+  height:0;
+  width:50%;
   position:fixed;
   z-index:1;
   top:0;
   right:0;
   background-color:#4bcaff;
   text-align: center;
-  overflow-x:hidden;
-  padding-top:;
+  overflow-y:hidden;
+  transition: height 1s ease;
+  margin-top: 50px; 
+
 }
 
-
-
-nav a{
+#burger a{
   padding:10px 10px 10px 30px;
   text-decoration:none;
   font-size:22px;
   color:#000;
-  display:block;
-  transition:0.3s;
+  display: block;
+  transition:s;
 }
-nav a:hover{
+
+#burger.active {
+    display: block;
+    width:50%;
+    height:100%;
+    margin-top: 50px; 
+	
+}
+
+
+#burger a:hover{
   color:#fff;
 }
 

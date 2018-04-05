@@ -142,7 +142,7 @@ $(function() {
  * Smooth scroll / Scroll To Top
 /* ---------------------------------------------- */
 
-$('a[href="#startpage"], a[href="#services"], a[href="#myworks"], a[href="#mypros"], a[href="#contact"]').click(function() {
+$('a[href="#startpage"], a[href="#services"], a[href="#myworks"], a[href="#myskills"], a[href="#mypros"], a[href="#contact"]').click(function() {
   $("html, body").animate({
     scrollTop: $($(this).attr("href")).offset().top + "px"
     }, {

@@ -19,9 +19,24 @@ window.onload = function(){                        //calling the function on win
   }, 1000); 
 };
 
+/* ---------------------------------------------- /*
+ * Sticky Navbar
+/* ---------------------------------------------- */
 
+window.onscroll = function () {stickyNav()}; // function stickyNav executes on scrolling
 
+var navbar = document.getElementById("nav"); // Get the navbar 
 
+var sticky = navbar.offsetTop; // Get the offset position of the navbar 
+
+function stickyNav() {                // Adding the sticky class to the navbar reaching its scroll position. Remove "sticky" leaving the scroll position 
+  if (window.pageYOffset >= sticky) { 
+    navbar.classList.add("sticky");
+    navbar.firstElementChild.lastElementChild.classList.add("lightSpeedIn");
+    } else { 
+    navbar.classList.remove("sticky"); 
+  } 
+}
 
 
 
@@ -127,24 +142,15 @@ $(function() {
  * Smooth scroll / Scroll To Top
 /* ---------------------------------------------- */
 
-  $('a[href]').bind("click", function(e){
-           
-      var anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top
-      }, 1000);
-      e.preventDefault();
-    });
-
-
-  $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.scroll-up').fadeIn();
-      } else {
-        $('.scroll-up').fadeOut();
-      }
-    });
-
+$('a[href="#startpage"], a[href="#services"], a[href="#myworks"], a[href="#mypros"], a[href="#contact"]').click(function() {
+  $("html, body").animate({
+    scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+        duration: 1500,
+        easing: "swing"
+        });
+          return false;
+        });
 })(jQuery);
 
 

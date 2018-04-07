@@ -10,4 +10,4 @@ v1.2 - I have worked with 'my works' blocks. I have changed hover effect to imag
 
 v1.3 - I have created responsive navigation menu.
 
-v1.4 - I have created content accordion of the 'about me' block
+v1.4 - I have created content accordion of the 'about me' block, made it responsive, changed some styles of the block.

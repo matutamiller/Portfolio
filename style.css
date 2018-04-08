@@ -17,6 +17,8 @@ html, body {
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -459,23 +461,27 @@ a {
 
 .forHover {
 	position: relative;
-	height: inherit;
-	width:100%;
+	width:0;
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
-	color: #ffffff;
+	color: #37474f;
 	background-color: #76bcf5;
 	overflow: hidden;
-  	height: 0;
+  	height: 100%;
   	transition: 1s ease;
 	border-radius: 15px;
   	opacity:0.95;
-  	text-shadow: #ffffff 0 0 10px;
+  	text-shadow: #ffffff 0 0px 10px;
+}
+
+.forHover h3 {
+	color: #ffffff;
+	text-shadow: #37474f 0 0px 10px;
 }
 
 .wblocks:hover .forHover {
-  height: 100%;
+  width: 100%;
 }
 .work-button {
 	display: flex;
@@ -502,7 +508,7 @@ a {
 }
 
 .wlink:hover {
-	background-color: #2a87dd;
+	background-color: #37474f;
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	transition: all 1s ease;
@@ -527,11 +533,9 @@ a {
 }
 
 
-
-
 .flex-container {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   display: -webkit-flex;
   /* Safari */
@@ -623,9 +627,8 @@ a {
 }
 
 .home {
-  height: 100vh;
-  background: #2a87dd;
-
+  height: 80vh;
+  background: #c51730;
   animation-name: aboutFlexSlide;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -679,13 +682,11 @@ a {
 
 .flex-about-home {
   opacity: 0;
-
   animation-name: flexAboutHome;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: 0s;
-  animation-iteration-count: 1;
-  
+  animation-iteration-count: 1; 
 }
   @media screen and (min-width: 768px) {
     @include animation-properties((animation: flexAboutHome, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
@@ -704,24 +705,12 @@ a {
   }
 }
 
-
-
-.about {
-  background: #76bcf5;
- 
+.hobbies {
+  background: #2a87dd;
 }
-
-.contact {
-  background: #69d6cc;
+.coding {
+    background: #04bf00;
 }
-.work {
-    background: #f18f00;
-}
-
-
-
-
-
 
 
 /* ---------------------------------------------- /*

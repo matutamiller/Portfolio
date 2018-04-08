@@ -92,7 +92,7 @@ function skillsAnimationTrigger() {
 
 var animatedBlock = document.getElementById("myskills-animate"); 
 
-var pos = animatedBlock.offsetTop + 1000;               
+var pos = animatedBlock.offsetTop + 2000;               
   if (window.pageYOffset >= pos) { 
     animatedBlock.classList.add("fadeInUp", "mypros-visible") 
     } 

@@ -103,6 +103,18 @@ a {
 	letter-spacing: 1px;
 }
 
+@media(max-width:750px){
+  .intro {
+	margin-top: 9em;	
+}
+.start {
+	font-size: 18px;
+}
+.title {
+	font-size: 30px;
+
+}
+}
 /* ---------------------------------------------- /*
  *Scroll Down
 /* ---------------------------------------------- */
@@ -357,6 +369,9 @@ a {
 .blocks_text {
 	margin: 0 20px 20px 20px ;
 }
+.blocks_icon {
+	padding: 10px;
+}
 .col {
 	width: calc(25% - 30px);
 }
@@ -450,12 +465,13 @@ a {
 	justify-content: space-around;
 	text-align: center;
 	color: #ffffff;
-	background-color: #42b3eb;
+	background-color: #76bcf5;
 	overflow: hidden;
   	height: 0;
   	transition: 1s ease;
 	border-radius: 15px;
-  
+  	opacity:0.95;
+  	text-shadow: #ffffff 0 0 10px;
 }
 
 .wblocks:hover .forHover {
@@ -482,11 +498,13 @@ a {
 	transition: background-color .5s ease;
 	text-align: center;
 	padding: 10px 0px;
+	text-shadow: #ffffff 0 0 10px;
 }
 
 .wlink:hover {
-	background-color: #4bcaff;
-	border: 1px solid #4bcaff;
+	background-color: #2a87dd;
+	border: 1px solid #ffffff;
+	color: #ffffff;
 	transition: all 1s ease;
 }
 
@@ -606,7 +624,7 @@ a {
 
 .home {
   height: 100vh;
-  background: #5889b2;
+  background: #2a87dd;
 
   animation-name: aboutFlexSlide;
   animation-duration: 3s;
@@ -697,7 +715,7 @@ a {
   background: #69d6cc;
 }
 .work {
-    background: #bad996;
+    background: #f18f00;
 }
 
 
@@ -731,105 +749,155 @@ a {
 	opacity: 1;
 }
 
-#myprosrotator {
+#myprosaccordion {
 	background-color: #ffffff;
-	height: 60vh;
+	min-height: 40vh;
 }
 
-/* ---------------------------------------------- /*
- * My Pros Rotator
-/* ---------------------------------------------- */
-#myprosrotator .content-wr {
-	margin: 0 20px;
-}
-.cbp-qtrotator {
-	position: relative;
-	margin: 3em auto 5em auto;
-	max-width: 800px;
-	width: 100%;
-	min-height: 400px;
-}
 
-.cbp-qtrotator .cbp-qtcontent {
-	position: absolute;
-	min-height: 200px;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
-	padding: 2em 0;
-	top: 0;
-	z-index: 0;
-	opacity: 0;
-	width: 100%;
+
+
+
+/* Accordion my pros */
+
+
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 150px;
+  overflow: hidden;
+  margin: 50px auto;
 }
 
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	border-bottom: none;
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
 }
 
-/* Currently visible */
-.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative; 
-	z-index: 100;
-	pointer-events: auto;
-	opacity: 1;
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.7%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
 }
 
-.cbp-qtrotator .cbp-qtcontent:before,
-.cbp-qtrotator .cbp-qtcontent:after {
-	content: " ";
-	display: table;
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
 }
 
-.cbp-qtrotator .cbp-qtcontent:after {
-	clear: both;
+.accordion ul li div  {
+  display: block;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: #ffffff 0 0 10px;
+  transition: all 200ms ease;
 }
 
-.cbp-qtprogress {
-	position: absolute;
-	background: #ff5252;
-	height: 1px;
-	width: 0;
-	top: 0;
-	z-index: 1000;
+.accordion ul li div  * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
-.cbp-qtrotator blockquote {
-	margin: 0;
-	padding: 0;
+.accordion ul li div  h2 {
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  top: 50px;
 }
 
-.cbp-qtrotator blockquote p {
-	font-size: 1.5em;
-	color: #888;
-	font-weight: 300;
-	margin: 0.4em 0 1em;
+
+
+.accordion ul li:nth-child(1) { background: #48c9ef; }
+
+.accordion ul li:nth-child(2) { background: #eded44 ; }
+
+.accordion ul li:nth-child(3) { background: #2a87dd; }
+
+.accordion ul li:nth-child(4) { background:#010cb1 ; }
+
+.accordion ul li:nth-child(5) { background:#69d6cc; }
+
+.accordion ul li:nth-child(6) { background: #ca0b03 ; }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 50%; }
+
+.accordion ul:hover li:hover div { background: rgba(0, 0, 0, 0.1); }
+
+.accordion ul:hover li:hover div * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+ @media screen and (max-width: 780px) {
+
+
+
+.accordion { height: auto; }
+
+.accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transition: none;
+  transition: none;
 }
 
-/*.cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
+
+.accordion ul li div  * {
+  opacity: 1;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+
 }
 
-.cbp-qtrotator blockquote footer:before {
-	content: '- ';
-}*/
-
-.cbp-qtrotator .cbp-qtcontent img {
-	float: right;
-	margin-left: 3em;
+.accordion ul li div  h2 {
+  text-overflow: ;
+  font-size: 14px;
+  text-transform: uppercase;
+  top: 50px;
+  margin-left: 15px;
+}
 }
 
-/* Example for media query */
-@media screen and (max-width: 30.6em) { 
-
-	.cbp-qtrotator {
-		font-size: 70%;
-	}
-
-	.cbp-qtrotator img {
-		width: 80px;
-	}
-}
 
 /* ---------------------------------------------- /*
  * Contact Me
@@ -988,8 +1056,11 @@ label {
 	width: 70%;
 	}
 	#footer{
-	height: 30vh;
+	height: 20vh;
 	}
+	.name-year {
+	font-size: 14px;
+}
 }
 
 /* ---------------------------------------------- /*

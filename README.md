@@ -15,3 +15,5 @@ v1.4 - I have created content accordion of the 'about me' block, made it respons
 v1.5 - I worked on the 'my works' block. Filled it with the content and links to my works. Fixed anchor scroll. I have removed jQuery quotator and replaced it with the colorful responsive accordion representing 'my pros'. Added some media queries for rwd.
 
 v1.6 - I worked on the content of the 'about me' section, changed some styles of the 'my works' block.
+
+v1.7 - I have fixed animation of the 'about me' block.

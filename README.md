@@ -16,4 +16,4 @@ v1.5 - I worked on the 'my works' block. Filled it with the content and links to
 
 v1.6 - I worked on the content of the 'about me' section, changed some styles of the 'my works' block.
 
-v1.7 - I have fixed animation of the 'about me' block.
+v1.7 - I have fixed animation of the 'about me' block, fixed name dispay in php file.

@@ -20,7 +20,7 @@ if(isset($_POST['message'])){
 		$res['sendstatus'] = 'done';
 	
 		//Edit your message here
-		$res['message'] = $name . 'Thank you for your Letter';
+		$res['message'] = $name . ', thank you for your letter';
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to matutamiller@gmail.com';

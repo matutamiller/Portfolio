@@ -69,7 +69,7 @@ a {
 /* ---------------------------------------------- */
 #startpage {
 	min-height: 100vh;
-	background: url(assets/img/overlayer.png), url(assets/img/bgdesk.jpg) no-repeat center fixed;
+	background: url(assets/img/overlayer1.png), url(assets/img/bgdesk.jpg) no-repeat center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -439,7 +439,7 @@ a {
 	background-size: cover;
 }
 .wblocksBg2 {
-	background: url(assets/img/work2.jpg) no-repeat center;
+	background: url(assets/img/work2.png) no-repeat center;
 	background-size: cover;
 }
 .wblocksBg3 {
@@ -635,10 +635,7 @@ a {
   animation-delay: 0s;
   animation-iteration-count: 1;
 }
-  @media screen and (min-width: 768px) {
-    @include animation-properties((animation: aboutFlexSlide, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
-  }
-}
+
 
 @keyframes aboutFlexSlide {
   0% {
@@ -655,43 +652,6 @@ a {
   }
 }
 
-.flex-title-home {
-  @media screen and (min-width: 768px) {
-    transform: rotate(90deg);
-    top: 15%;
-    @include animation-properties((animation: homeFlextitle, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
-  }
-}
-
-
-
-@keyframes homeFlextitle {
-  0% {
-    transform: rotate(90deg);
-    top: 15%;
-  }
-  50% {
-    transform: rotate(0deg);
-    top: 15%;
-  }
-  100% {
-    transform: rotate(90deg);
-    top: 15%;
-  }
-}
-
-.flex-about-home {
-  opacity: 0;
-  animation-name: flexAboutHome;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1; 
-}
-  @media screen and (min-width: 768px) {
-    @include animation-properties((animation: flexAboutHome, animation-duration: $defaultSeconds, animation-iteration-count: 1, animation-delay: 0s));
-  }
-}
 
 @keyframes flexAboutHome {
   0% {
@@ -790,7 +750,7 @@ a {
   width: 100%;
   position: relative;
   z-index: 3;
-  vertical-align: bottom;
+  
   padding: 15px 20px;
   box-sizing: border-box;
   color: #fff;
@@ -879,7 +839,6 @@ a {
 }
 
 .accordion ul li div  h2 {
-  text-overflow: ;
   font-size: 14px;
   text-transform: uppercase;
   top: 50px;

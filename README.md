@@ -20,4 +20,4 @@ v1.7 - I have fixed animation of the 'about me' block, fixed name dispay in php 
 
 v1.8 - I have changed some projects in 'my works' section, made some corrections in 'what I use' block.
 
-v1.8 - I have updated some projects in 'my works' section
+v1.9 - I have updated some projects in 'my works' section
